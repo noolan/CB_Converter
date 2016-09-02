@@ -1,0 +1,101 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Crimson Bikes Converter</title>
+		<style>
+			body, h1, h2, h3, h4, h5, h6 {
+				text-align: center;
+				font-family: "Lucida Grande";
+				font-weight: 100;
+			}
+
+			body {
+				margin: 0;
+				padding-top: 10vh;
+				font-size: 1vw;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				margin-bottom: 50px;
+			}
+
+			h1 { font-size: 350%; }
+			h2 { font-size: 300%; }
+			h3 { font-size: 250%; }
+			h4 { font-size: 200%; }
+			h5 { font-size: 150%; }
+			h6 { font-size: 100%; }
+
+			img {
+				max-width: 80%;
+			}
+
+			.logo-bar {
+				background-color: #e23c3c;
+				margin-bottom: 100px;
+			}
+
+			.logo-bar img {
+				width: 600px;
+			}
+
+			.converting-bar {
+				background-color: #d1cbbd;
+				height: 0;
+				overflow: hidden;
+				transition: height 350ms ease;
+				position: relative;
+			}
+			.converting-bar::after {
+				content: "Converting...";
+				color: #fff;
+				position: absolute;
+				top: 30px;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 250%;
+			}
+
+			.converting-bar.active {
+				height: 300px;
+			}
+
+			.results {
+				opacity: 0;
+				transition: opacity 350ms ease;
+			}
+			.results.finished {
+				opacity: 1;
+			}
+
+			code {
+				display: inline-block;
+				border-radius: 5px;
+				background-color: #ddd;
+				font-size: 125%;
+				padding: 5px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="logo-bar">
+			<img src="./img/logo.png" alt="Crimson Bikes logo">
+		</div>
+
+		<h1>Products File Converter</h1>
+
+		<h4>Drop the <code>google_products_file.txt</code> file anywhere to convert it for Shopify</h4>
+
+		<div class="converting-bar">
+			<img src="./img/bike.gif" alt="animated bike">
+		</div>
+
+		<h3 class="results">Finished<br><br><small id="output"></small></h3>
+
+
+
+
+		<script src="./dist/app.bundle.js"></script>
+	</body>
+</html>
