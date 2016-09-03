@@ -50,7 +50,7 @@ if (typeof window !== 'undefined') {
 							capitalize(r.age_group), capitalize(r.gender), r.google_product_category,
 							prune(r.title + ' for sale', 66), prune(r.description, 156), type[0], type.join(', ').toLowerCase(),
 							'new', 'TRUE',
-							'', '', '', '', '', 'lb'
+							'', '', '', '', '', '', 'lb'
 						]);
 					} catch (e) {
 						console.log(row);
