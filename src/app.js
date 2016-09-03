@@ -45,7 +45,7 @@ if (typeof window !== 'undefined') {
 							slugify(r.title), r.title, '', r.brand, type[0], type.join(' ').toLowerCase(), 'TRUE',
 							'Title', 'Default Title', '', '', '', '',
 							'', grams, '', 1, 'continue',
-							'', r.price.replace(' USD', ''), '', 'TRUE', 'TRUE',
+							'manual', r.price.replace(' USD', ''), '', 'TRUE', 'TRUE',
 							'', r.image_link, 'Image of ' + r.title, 'FALSE', r.mpn,
 							capitalize(r.age_group), capitalize(r.gender), r.google_product_category,
 							prune(r.title + ' for sale', 66), prune(r.description, 156), type[0], type.join(', ').toLowerCase(),
