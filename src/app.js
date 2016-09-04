@@ -42,7 +42,7 @@ if (typeof window !== 'undefined') {
 							grams = parseInt(r.shipping_weight.replace(' lbs', ''), 10) * 453.592;
 
 						data.push([
-							slugify(r.title), r.title, '', r.brand, type[0], type.join(' ').toLowerCase(), 'TRUE',
+							slugify(r.title), r.title, r.description, r.brand, type[0], type.join(' ').toLowerCase(), 'TRUE',
 							'Title', 'Default Title', '', '', '', '',
 							'', grams, '', 1, 'continue',
 							'manual', r.price.replace(' USD', ''), '', 'TRUE', 'TRUE',
