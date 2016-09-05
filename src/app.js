@@ -44,7 +44,7 @@ if (typeof window !== 'undefined') {
 						data.push([
 							slugify(r.title), r.title, r.description, r.brand, type[0], type.join(' ').toLowerCase(), 'TRUE',
 							'Title', 'Default Title', '', '', '', '',
-							'', grams, '', 1, 'continue',
+							'', grams, 'shopify', 1, 'continue',
 							'manual', r.price.replace(' USD', ''), '', 'TRUE', 'TRUE',
 							'', r.image_link, 'Image of ' + r.title, 'FALSE', r.mpn,
 							capitalize(r.age_group), capitalize(r.gender), r.google_product_category,
